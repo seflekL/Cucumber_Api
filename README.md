@@ -1,4 +1,4 @@
-🚀 Proje Özeti
+🥒 Cucumber API Projesi
 Cucumber API projesi, RESTful API'lerin test edilmesi için modern ve etkili bir çözüm sunar.
 Framework, aşağıdaki özellikleri içerir:
 
@@ -21,27 +21,17 @@ Rest-Assured: API doğrulama kütüphanesi.
 JUnit: Test çalıştırma framework'ü.
 JSON: API yanıtlarını işlemek için kütüphane.
 Maven: Proje yönetimi ve bağımlılık yönetimi.
-
- Kurulum ve Çalıştırma
+🔧 Kurulum ve Çalıştırma
 Projeyi yerel bilgisayarınıza klonlayın:
-
-bash
-Copy code
 git clone https://github.com/seflekL/Cucumber_Api.git
+
 Proje dizinine gidin:
-
-bash
-Copy code
 cd Cucumber_Api
+
 Maven bağımlılıklarını yükleyin:
-
-bash
-Copy code
 mvn clean install
-Testleri çalıştırın:
 
-bash
-Copy code
+Testleri çalıştırın:
 mvn test
 
 📊 Test Özellikleri
@@ -51,18 +41,14 @@ POST: Veri oluşturma işlemleri.
 PUT: Mevcut verilerin güncellenmesi.
 DELETE: Veri silme işlemleri.
 Örnek Senaryo
-gherkin
-Copy code
 Feature: Kullanıcı API'si
 
-  Scenario: Kullanıcı bilgilerini GET isteği ile doğrulama
-    Given Kullanıcı "https://api.example.com/users/1" endpointine GET isteği yapar
-    When API yanıtı alınır
-    Then Status kodu 200 olmalıdır
-    And Yanıtta "name" alanı "John Doe" olmalıdır
+Scenario: Kullanıcı bilgilerini GET isteği ile doğrulama
+Given Kullanıcı "https://api.example.com/users/1" endpointine GET isteği yapar
+When API yanıtı alınır
+Then Status kodu 200 olmalıdır
+And Yanıtta "name" alanı "John Doe" olmalıdır
+
 📫 İletişim
 Projeyi geliştiren kişiye ulaşmak için:
 GitHub: seflekL
-
-
-
